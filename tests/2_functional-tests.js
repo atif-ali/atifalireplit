@@ -63,7 +63,7 @@ suite('Functional Tests', function () {
 });
 
 const Browser = require('zombie');
-Browser.site = 'https://boilerplate-mochachai-1.atifalireplit.repl.co';
+Browser.site = 'https://qa-with-chai.herokuapp.com/';
   
 suite('Functional Tests with Zombie.js', function () {
   this.timeout(5000);
@@ -102,11 +102,7 @@ browser.fill('surname', 'Colombo').then(() => {
         browser.assert.elements('span#dates', 1)
         done();
       })
-        
       })
-      
-
-      done();
     });
   });
 });
